@@ -35,18 +35,18 @@ body {
 }
 
 .column1 {
-  width: 25%;
+  width: 30%;
   display:flex;
   align-items:center;
   justify-content:center;
 }
 	
 .column2 {
-  width: 50%;
+  width: 55%;
 }
 
 .column3 {
-  width: 25%;
+  width: 15%;
 }
 
 .photo {
@@ -64,6 +64,8 @@ body {
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 900px) {
+.sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 
   .row{
     display:block;
@@ -79,15 +81,12 @@ body {
     justify-content:center;
     text-align:center;
 	background-color: #FAB6CD;
-
-
   }
 
   .photo{
     text-align:center;
     width: 35%;
   }
-
 
 }
 
@@ -96,11 +95,37 @@ body {
     width: 80%;
     font-size: 18px;
 }
+	
+.sidenav {
+  width: 130px;
+  position: fixed;
+  z-index: 1;
+  top: 20px;
+  left: 10px;
+  background: #eee;
+  overflow-x: hidden;
+  padding: 8px 0;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #2196F3;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #064579;
+}
 
 </style>
 </head>
 
 <body>
+<div class="sidenav">
+  <a href="research.html">Research</a>
+</div>
 
   <header id="header">
      Kathryn (Kat) N. Graves
