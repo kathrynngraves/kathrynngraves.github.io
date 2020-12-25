@@ -1,1 +1,122 @@
-Hello World
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+
+<style>
+body {
+    /*margin: 60px auto;*/
+    /*width: 80%;*/
+    /*font-family: Helvetica*/
+    font-family: 'Roboto';font-size: 22px;
+}
+
+#header {
+  display: block;
+  /*background-color: #CBCEED;*/
+  color: #8089E8;
+  /*font-color:#CBCEED;*/
+  bottom: 0;
+  text-align: center;
+  font-size: 32px;
+   padding: 2px;
+   /*font-family: "Arial Black", Gadget, sans-serif;*/
+}
+
+
+#intro {
+	margin: 35px auto;
+	width: 80%;
+	font-size: 18px;
+}
+
+.row {
+  display:flex;
+  overflow: hidden;
+}
+
+.column1 {
+  width: 25%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.column2 {
+  width: 75%;
+}
+
+.photo {
+    margin: 0 auto;
+    width: 85%;
+    
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 900px) {
+
+  .row{
+    display:block;
+    align-items:center;
+    justify-content:center;
+  }
+
+  .column1, .column2 {
+    width: 100%;
+    display: block; 
+    float: none; 
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+
+  }
+
+  .photo{
+    text-align:center;
+    width: 35%;
+  }
+
+
+}
+
+#research{
+	margin: 60px auto;
+    width: 80%;
+    font-size: 18px;
+}
+
+</style>
+</head>
+
+<body>
+
+  <header id="header">
+     Kathryn (Kat) N. Graves
+  </header>
+    <div id="intro" class="row">
+  	<div class="column1">
+  		<img class="photo" src="me.jpeg">
+  	</div>
+  	<div class="column2">
+      <p>I'm a third year PhD student in Cognitive Neuroscience at Yale University. I am largely interested in the ways in which people learn and extract structure from their environments as they navigate, and the neural mechanisms that support these processes. In other words, I have people run around in virtual environments and even in the real world, while I observe their behavior and record from their brains! Specifically, I use a combination of behavioral, computational, and intracranial EEG methods to investigate the complex capacity that is human navigation.</p>
+
+    		<p>Prior to graduate school, I was a graduate Research Assistant in the Thompson-Schill Lab at the University of Pennsylvania, before which I was a undergrad RA in the Badre Lab at Brown University.</p>
+
+
+    </div>
+    </div>
+
+
+<p></p>
+
+
+</body>
+
+</html>
