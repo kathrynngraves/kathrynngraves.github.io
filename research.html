@@ -14,8 +14,8 @@ body {
 
 #header {
   display: block;
-  /*background-color: #CBCEED;*/
-  color: #8089E8;
+  background-color: #FAB6CD;
+  color: #000000;
   /*font-color:#CBCEED;*/
   bottom: 0;
   text-align: center;
@@ -37,13 +37,18 @@ body {
 }
 
 .column1 {
-  width: 25%;
+  width: 30%;
   display:flex;
   align-items:center;
   justify-content:center;
 }
+	
 .column2 {
-  width: 75%;
+  width: 55%;
+}
+
+.column3 {
+  width: 15%;
 }
 
 .photo {
@@ -61,6 +66,8 @@ body {
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 900px) {
+.sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 
   .row{
     display:block;
@@ -68,14 +75,14 @@ body {
     justify-content:center;
   }
 
-  .column1, .column2 {
+  .column1, .column2, .column3 {
     width: 100%;
     display: block; 
     float: none; 
     align-items:center;
     justify-content:center;
     text-align:center;
-
+	background-color: #FAB6CD;
   }
 
   .photo{
@@ -83,13 +90,35 @@ body {
     width: 35%;
   }
 
-
 }
 
 #research{
 	margin: 60px auto;
     width: 80%;
     font-size: 18px;
+}
+	
+.sidenav {
+  width: 130px;
+  position: fixed;
+  z-index: 1;
+  top: 70px;
+  right: 10px;
+  background: #000000;
+  overflow-x: hidden;
+  padding: 8px 0;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #FAB6CD;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #064579;
 }
 
 </style>
