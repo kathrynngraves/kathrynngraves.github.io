@@ -1,0 +1,99 @@
+body {
+
+  font-family: 'Roboto';font-size: 22px;
+}
+
+#header {
+display: block;
+background-color: #FAB6CD;
+color: #000000;
+/*font-color:#CBCEED;*/
+bottom: 0;
+text-align: center;
+font-size: 32px;
+ padding: 2px;
+ /*font-family: "Arial Black", Gadget, sans-serif;*/
+}
+
+
+#intro {
+margin: 50px 60px;
+font-size: 18px;
+}
+
+.row {
+display:flex;
+overflow: hidden;
+}
+
+.column1 {
+width: 25%;
+display:flex;
+align-items:flex-start;
+}
+
+.column2 {
+width: 55%;
+margin-left: 35px;
+margin-top: -20px;
+}
+
+.column3 {
+margin-left: 20px;
+margin-right:20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+.sidenav {
+width: 200px;
+
+background: #FAB6CD;
+overflow-x: hidden;
+padding: 8px 0;
+}
+
+.sidenav a {
+padding: 6px 8px 6px 16px;
+/*align-items:center;*/
+text-align: center;
+text-decoration: none;
+font-size: 25px;
+color: #000000;
+display: block;
+}
+
+.sidenav a:hover {
+color: #064579;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other*/
+@media screen and (max-width: 900px) {
+/*.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}*/
+
+.row{
+  display:block;
+  align-items:center;
+  justify-content:center;
+}
+
+.column1, .column2 ,.column3 {
+  width: 100%;
+  display: block; 
+  float: none; 
+  text-align:center;
+  margin: 0px;
+}
+
+.sidenav {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+}
