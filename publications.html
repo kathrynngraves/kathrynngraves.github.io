@@ -1,140 +1,34 @@
 <html>
+	
 <head>
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+<link href='styles.css' rel='stylesheet'>
+	<style>
+	.photo {
+	  margin: 0 auto;
+	  width: 90%;        
+	}
+	@media screen and (max-width: 900px) {
 
-<style>
-body {
-    /*margin: 60px auto;*/
-    /*width: 80%;*/
-    /*font-family: Helvetica*/
-    font-family: 'Roboto';font-size: 22px;
-}
+	.photo{
+	  text-align:center;
+	  width: 35%;
+	}
+	}
 
-#header {
-  display: block;
-  background-color: #FAB6CD;
-  color: #000000;
-  /*font-color:#CBCEED;*/
-  bottom: 0;
-  text-align: center;
-  font-size: 32px;
-   padding: 2px;
-   /*font-family: "Arial Black", Gadget, sans-serif;*/
-}
-
-#intro {
-	margin: 50px 60px;
-	width: 80%;
-	font-size: 18px;
-}
-
-.row {
-  display:flex;
-  overflow: hidden;
-}
-
-.column1 {
-  width: 25%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-}
-	
-.column2 {
-  width: 55%;
-margin-left: 35px;
-}
-
-/*.column3 {
-  width: 15%;
-}*/
-
-.photo {
-    margin: 0 auto;
-    width: 90%;
-    
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 900px) {
-.sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-
-  .row{
-    display:block;
-    align-items:center;
-    justify-content:center;
-  }
-
-  .column1, .column2, .column3 {
-    width: 100%;
-    display: block; 
-    float: none; 
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-	background-color: #FA4B85;
-  }
-
-  .photo{
-    text-align:center;
-    width: 35%;
-  }
-
-}
-
-#research{
-	margin: 60px auto;
-    width: 60%;
-    font-size: 18px;
-}
-	
-.sidenav {
-  margin-right: 60px;
-  width: 200px;
-  position: fixed;
-  z-index: 1;
-  top: 110px;
-  right: 10px;
-  background: #FAB6CD;
-  overflow-x: hidden;
-  padding: 8px 0;
-}
-
-.sidenav a {
-  padding: 6px 8px 6px 16px;
-	/*align-items:center;*/
-	text-align: center;
-  text-decoration: none;
-  font-size: 25px;
-  color: #000000;
-  display: block;
-}
-
-.sidenav a:hover {
-  color: #064579;
-}
-
-</style>
+	</style>
 </head>
 
 <body>	
-<div class="sidenav">
-	<a href="index.html">Home</a>
-  	<a href="publications.html">Publications</a>
-	<a href="presentations.html">Presentations</a>
-	<a href="diversity.html">Diversity</a>
-	<a href="contact.html">Contact</a>
-</div>
+<div class="column3">
+	<div class="sidenav">
+		<a href="index.html">Home</a>
+  		<a href="publications.html">Publications</a>
+		<a href="presentations.html">Presentations</a>
+		<a href="diversity.html">Diversity</a>
+		<a href="contact.html">Contact</a>
+	</div>
 </div>
 	
   <header id="header">
