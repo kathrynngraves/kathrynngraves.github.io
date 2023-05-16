@@ -39,8 +39,8 @@ margin-top: -20px;
 }
 
 .column3 {
-margin-left: 40px;
-margin-right:40px;
+margin-left: 20px;
+margin-right:20px;
 }
 
 /* Clear floats after the columns */
@@ -51,7 +51,7 @@ clear: both;
 }
 
 .sidenav {
-width: 200px;
+width: 225px;
 
 background: #F56995;
 overflow-x: hidden;
